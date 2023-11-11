@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById('convert').addEventListener('click', performCalculation);
+    document.getElementById('counter').addEventListener('click', count);
 });
 
-function performCalculation() {
-    const number = document.getElementById("number").value;
-    const sum = (Number(number) - 32) * 5/9
-    document.getElementById("answer").textContent = sum;
+function count() {
+    const text = document.getElementById("word-input").value;
+    const words = text.split(/\s+/).filter(word => word.length > 0);
+    const wordCount = words.length;
+    document.getElementById("Count").textContent = wordCount;
 }
 
 

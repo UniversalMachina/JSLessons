@@ -38,7 +38,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 #app-container {
@@ -70,7 +70,7 @@ body {
 #chat-container {
     position: absolute; /* Absolute position relative to the app-container */
     right: 10%; /* Move it closer to the middle */
-    width: 350px; /* Adjusted width */
+    width: 400px; /* Adjusted width */
     height: 700px; /* Adjust height if necessary */
     background: linear-gradient(to bottom, var(--chat-background-start), var(--chat-background-end));
     border-radius: 20px;
